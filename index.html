@@ -3,9 +3,15 @@
 <head>
   <title>PopeWorld</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f4f4f9; }
-    h1 { color: #333; }
-    p { color: #666; }
+    :root {
+      --base: #1e1e2e;
+      --text: #cdd6f4;
+      --mauve: #cba6f7;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: var(--base); color: var(--text); }
+    h1 { color: var(--text); }
+    p { color: var(--text); }
+    .fade.second { color: var(--mauve); }
 
     .fade {
       opacity: 0;
@@ -28,6 +34,6 @@
 </head>
 <body>
   <p class="fade"><i>This is not the website you were looking for</i></p>
-  <p class="fade second"><i>Move along, Move along</i></p>
+  <p class="fade second"><i>Move along</i></p>
 </body>
 </html>
